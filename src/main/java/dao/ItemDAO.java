@@ -33,14 +33,7 @@ public interface ItemDAO {
 	   * 해당하는 지역에 포함되는 레코드 검색
 	   * */
 	  List<ItemDTO> selectByRegion(int regionNo) throws SQLException;
-	  
-	  
-	  /**
-	   * 조회수를 증가하는 기능
-	   * update Electronics set readnum = readnum + 1 where model_num=?
-	   * */
-	  int increamentByReadnum(String modelNum) throws SQLException;
-	  
+
 	  
 	  /**
 	  * 레코드 삽입
@@ -58,7 +51,7 @@ public interface ItemDAO {
 	    * 상품번호에 해당하는 레코드 수정
 	    * @return : 1-수정성공 , 0 - 수정실패
 	    * */
-	  int update(ItemDTO item) throws SQLException;
+	  int update(int itemNo) throws SQLException;
 	  
 	  
 	  /**

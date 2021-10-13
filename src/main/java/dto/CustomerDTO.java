@@ -13,6 +13,16 @@ public class CustomerDTO {
     private String customerRegDate;   //구매자 등록일
     
     public CustomerDTO() {}
+    
+    
+    
+	public CustomerDTO(String customerId, String customerPwd) {
+		super();
+		this.customerId = customerId;
+		this.customerPwd = customerPwd;
+	}
+
+
 
 	public CustomerDTO(int customerNo, String customerId, String customerPwd, String customerName, String customerBirth,
 			String customerEmail, String customerAddr, String customerContact, String customerRegDate) {
