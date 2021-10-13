@@ -1777,7 +1777,7 @@
     <script src="../assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 
     <!-- JS Master Slider -->
-    <script src="../assets/vendor/master-slider/source/assets/js/masterslider.min.js"></script>
+    <!--  --><script src="../assets/vendor/master-slider/source/assets/js/masterslider.min.js"></script>
 
     <!-- JS Unify -->
     <script src="../assets/js/hs.core.js"></script>
