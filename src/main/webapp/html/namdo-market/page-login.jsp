@@ -70,7 +70,7 @@
               </header>
 
               <!-- Form -->
-              <form class="g-py-15">
+              <form method="post" action="login" class="g-py-15">
                 <div class="mb-4">
                   <div class="input-group g-rounded-left-3">
                     <span class="input-group-prepend g-width-45">
@@ -78,7 +78,7 @@
                         <i class="icon-finance-067 u-line-icon-pro"></i>
                       </span>
                     </span>
-                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 g-rounded-left-0 g-rounded-right-3 g-py-15 g-px-15" type="email" placeholder="Email Adress">
+                    <input name="userEmail" class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 g-rounded-left-0 g-rounded-right-3 g-py-15 g-px-15" type="email" placeholder="이메일">
                   </div>
                 </div>
 
@@ -89,7 +89,7 @@
                         <i class="icon-media-094 u-line-icon-pro"></i>
                       </span>
                     </span>
-                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 g-rounded-left-0 g-rounded-right-3 g-py-15 g-px-15" type="password" placeholder="Password">
+                    <input name="userPwd" class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 g-rounded-left-0 g-rounded-right-3 g-py-15 g-px-15" type="password" placeholder="비밀번호">
                   </div>
                 </div>
 
@@ -102,7 +102,7 @@
                 </div>
 
                 <div class="mb-5">
-                  <button class="btn btn-block u-btn-primary g-font-size-12 text-uppercase g-py-12 g-px-25" type="button">로그인</button>
+                  <button type="submit" class="btn btn-block u-btn-primary g-font-size-12 text-uppercase g-py-12 g-px-25" type="button">로그인</button>
                 </div>
 
                 <div class="d-flex justify-content-center text-center g-mb-30">

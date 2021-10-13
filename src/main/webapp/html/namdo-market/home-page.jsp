@@ -4,7 +4,7 @@
 <html>
 <head>
   <!-- Title -->
-  <title>E-commerce Home Page 3 | Unify - Responsive Website Template</title>
+  <title>Namdo Market Home Page | Unify - Responsive Website Template</title>
 
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
@@ -640,8 +640,8 @@
               <div class="media g-px-50--lg">
                 <i class="d-flex g-color-black g-font-size-30 g-pos-rel g-top-3 mr-4 icon-real-estate-048 u-line-icon-pro"></i>
                 <div class="media-body">
-                  <span class="d-block g-font-weight-500 g-font-size-default text-uppercase">Free Shipping</span>
-                  <span class="d-block g-color-gray-dark-v4">In 2-3 Days</span>
+                  <span class="d-block g-font-weight-500 g-font-size-default text-uppercase">무료 배송</span>
+                  <span class="d-block g-color-gray-dark-v4">2-3일 이내</span>
                 </div>
               </div>
             </div>
@@ -650,8 +650,8 @@
               <div class="media g-px-50--lg">
                 <i class="d-flex g-color-black g-font-size-30 g-pos-rel g-top-3 mr-4 icon-real-estate-040 u-line-icon-pro"></i>
                 <div class="media-body">
-                  <span class="d-block g-font-weight-500 g-font-size-default text-uppercase">Free Returns</span>
-                  <span class="d-block g-color-gray-dark-v4">No Questions Asked</span>
+                  <span class="d-block g-font-weight-500 g-font-size-default text-uppercase">반품 및 환불</span>
+                  <span class="d-block g-color-gray-dark-v4">수령 후 7일 이내</span>
                 </div>
               </div>
             </div>
@@ -660,8 +660,8 @@
               <div class="media g-px-50--lg">
                 <i class="d-flex g-color-black g-font-size-30 g-pos-rel g-top-3 mr-4 icon-hotel-restaurant-062 u-line-icon-pro"></i>
                 <div class="media-body text-left">
-                  <span class="d-block g-font-weight-500 g-font-size-default text-uppercase">Free 24</span>
-                  <span class="d-block g-color-gray-dark-v4">Days Storage</span>
+                  <span class="d-block g-font-weight-500 g-font-size-default text-uppercase">24시 접수</span>
+                  <span class="d-block g-color-gray-dark-v4">상시 주문 접수 대기</span>
                 </div>
               </div>
             </div>

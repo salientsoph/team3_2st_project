@@ -180,7 +180,7 @@
           <div class="g-pos-rel g-z-index-1 g-pa-50">
             <span class="d-block g-color-primary g-font-weight-700 g-font-size-40 mb-0">-40%</span>
             <h2 class="g-color-white g-font-size-50 mb-3">가을 수산물 대축제</h2>
-            <a class="btn u-btn-white g-brd-primary--hover g-color-primary g-color-white--hover g-bg-primary--hover g-font-size-12 text-uppercase g-py-12 g-px-25" href="home-page-1.html">Shop Now</a>
+            <a class="btn u-btn-white g-brd-primary--hover g-color-primary g-color-white--hover g-bg-primary--hover g-font-size-12 text-uppercase g-py-12 g-px-25" href="home-page.jsp">Shop Now</a>
           </div>
         </div>
         <!-- End Banner -->

@@ -150,7 +150,7 @@
               <!-- End Responsive Toggle Button -->
 
               <!-- Logo -->
-              <a class="navbar-brand" href="home-page-3.html">
+              <a class="navbar-brand" href="home-page.jsp">
                 <img src="assets/img/logo/logo-1.png" alt="Image Description">
               </a>
               <!-- End Logo -->
