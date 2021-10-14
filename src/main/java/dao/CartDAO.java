@@ -11,7 +11,7 @@ public interface CartDAO {
      * 장바구니에 추가하는 메소드
      * @return: 0 - 추가 실패, 1 - 추가 성공
      * */
-	int addToCart(CartDTO cart) throws SQLException;
+	int addToCart(int customerNo, int itemNo, int cartItemCount) throws SQLException;
 	
 	
 	/**

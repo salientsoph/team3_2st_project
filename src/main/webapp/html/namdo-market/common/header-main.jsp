@@ -36,16 +36,16 @@
                        data-dropdown-animation-in="fadeInUp"
                        data-dropdown-animation-out="fadeOutDown">
                       <i class="align-middle mr-2 icon-education-045 u-line-icon-pro"></i>
-                      <span class="g-font-size-default g-pos-rel g-top-minus-2">Search</span>
+                      <span class="g-font-size-default g-pos-rel g-top-minus-2">검색</span>
                     </a>
                   </div>
 
                   <!-- Search Form -->
                   <form id="searchform-1" class="u-searchform-v1 u-dropdown--css-animation u-dropdown--hidden u-shadow-v20 g-max-width-400 g-brd-around g-brd-gray-light-v4 g-bg-white rounded g-left-0 g-pa-10">
                     <div class="input-group">
-                      <input class="form-control rounded-0 u-form-control border-0 g-font-size-13 g-py-12" type="search" placeholder="Enter Your Search Here...">
+                      <input class="form-control rounded-0 u-form-control border-0 g-font-size-13 g-py-12" type="search">
                       <div class="input-group-addon g-brd-none p-0">
-                        <button class="btn u-btn-primary g-font-size-12 rounded text-uppercase g-py-12 g-px-15" type="submit">Go</button>
+                        <button class="btn u-btn-primary g-font-size-12 rounded text-uppercase g-py-12 g-px-15" type="submit">검색</button>
                       </div>
                     </div>
                   </form>
@@ -57,7 +57,7 @@
               <div class="col-6 col-sm-auto order-sm-3 g-py-5 g-pr-0 g-py-20--sm">
                 <!-- Login -->
                 <div class="d-inline-block">
-                  <a class="u-icon-v1 g-color-text g-color-black--hover g-color-black--focus g-font-size-16 g-text-underline--none--hover" href="page-login.jsp">
+                  <a class="u-icon-v1 g-color-text g-color-black--hover g-color-black--focus g-font-size-16 g-text-underline--none--hover" href="page-login-customer.jsp">
                     <i class="icon-finance-067 u-line-icon-pro"></i>
                   </a>
                 </div>
@@ -73,7 +73,7 @@
 
                 <!-- Basket -->
                 <div class="u-basket d-inline-block">
-                  <a class="u-icon-v1 g-color-text g-color-black--hover g-color-black--focus g-font-size-16 g-text-underline--none--hover" href="#">
+                  <a class="u-icon-v1 g-color-text g-color-black--hover g-color-black--focus g-font-size-16 g-text-underline--none--hover" href="page-cart.html">
                     <i class="d-inline-block icon-hotel-restaurant-105 u-line-icon-pro"></i>
                   </a>
                 </div>
@@ -165,15 +165,16 @@
                         
                         <div class="col-sm-6 col-md-2 g-mb-30 g-mb-0--sm">
                           <!-- Links -->
+                          
                             <div class="mb-5">
                               <span class="d-block g-font-weight-500 text-uppercase mb-2">
-							    <a class="nav-link text-uppercase g-color-primary--hover g-px-0 g-py-0" href="page-category.jsp"><b>생선</b></a>
+							    <a class="nav-link text-uppercase g-color-primary--hover g-px-0 g-py-0" href="page-category-fish.jsp"><b>생선</b></a>
 							  </span>
 
                             <ul class="list-unstyled mb-0">
-                              <li><a class="d-block g-color-text g-color-primary--hover g-text-underline--none--hover g-py-5" href="#">굴비</a></li>
-                              <li><a class="d-block g-color-text g-color-primary--hover g-text-underline--none--hover g-py-5" href="#">세발낙지</a></li>
-                              <li><a class="d-block g-color-text g-color-primary--hover g-text-underline--none--hover g-py-5" href="#">홍어</a></li>
+                              <li><a class="d-block g-color-text g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-category-fish-gulbi.jsp">굴비</a></li>
+                              <li><a class="d-block g-color-text g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-category-fish-octopus.jsp">세발낙지</a></li>
+                              <li><a class="d-block g-color-text g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-category-fish-skates.jsp">홍어</a></li>
                              
                             </ul>
                           </div>
@@ -186,7 +187,7 @@
 							</span>
 
                             <ul class="list-unstyled mb-0">
-                              <li><a class="d-block g-color-text g-color-primary--hover g-text-underline--none--hover g-py-5" href="#">멸치</a></li>
+                              <li><a class="d-block g-color-text g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-category.jsp">멸치</a></li>
                              
                             </ul>
                           </div>
@@ -199,8 +200,8 @@
 							  </span>
 
                             <ul class="list-unstyled mb-0">
-                              <li><a class="d-block g-color-text g-color-primary--hover g-text-underline--none--hover g-py-5" href="#">김</a></li>
-                              <li><a class="d-block g-color-text g-color-primary--hover g-text-underline--none--hover g-py-5" href="#">미역</a></li>
+                              <li><a class="d-block g-color-text g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-category.jsp">김</a></li>
+                              <li><a class="d-block g-color-text g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-category.jsp">미역</a></li>
                              
                             </ul>
                           </div>
@@ -217,10 +218,10 @@
 							</span>
 
                             <ul class="list-unstyled mb-0">
-                              <li><a class="d-block g-color-text g-color-primary--hover g-text-underline--none--hover g-py-5" href="#">전복</a></li>
-                              <li><a class="d-block g-color-text g-color-primary--hover g-text-underline--none--hover g-py-5" href="#">바지락</a></li>
-                              <li><a class="d-block g-color-text g-color-primary--hover g-text-underline--none--hover g-py-5" href="#">꼬막</a></li>
-                              <li><a class="d-block g-color-text g-color-primary--hover g-text-underline--none--hover g-py-5" href="#">새우</a></li>
+                              <li><a class="d-block g-color-text g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-category.jsp">전복</a></li>
+                              <li><a class="d-block g-color-text g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-category.jsp">바지락</a></li>
+                              <li><a class="d-block g-color-text g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-category.jsp">꼬막</a></li>
+                              <li><a class="d-block g-color-text g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-category.jsp">새우</a></li>
                              
                             </ul>
                           </div>
@@ -431,25 +432,103 @@
                   <!-- 지역별 특산품 끝 -->
                   
                   <!-- 생선 -->
-                  <li class="nav-item g-mx-10--lg g-mx-15--xl">
-                    <a class="nav-link text-uppercase g-color-primary--hover g-px-5 g-py-20" href="page-category.jsp"><b>생선</b></a>
+                  <li class="nav-item hs-has-sub-menu g-mx-10--lg g-mx-15--xl">
+                    <a id="nav-link--home" class="nav-link text-uppercase g-color-primary--hover g-px-5 g-py-20" href="page-category-fish.jsp"
+                       aria-haspopup="true"
+                       aria-expanded="false"
+                       aria-controls="nav-submenu--home">
+                      <b>생선</b>
+                    </a>
+
+                    <!-- Submenu -->
+                    <ul id="nav-submenu--home" class="hs-sub-menu list-unstyled u-shadow-v11 g-min-width-220 g-brd-top g-brd-primary g-brd-top-2 g-mt-7"
+                        aria-labelledby="nav-link--home">
+                      <li class="dropdown-item">
+                        <a class="nav-link g-color-gray-dark-v1" href="page-category-fish-gulbi.jsp">굴비</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link g-color-gray-dark-v1" href="page-category-fish-octopus.jsp">세발낙지</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link g-color-gray-dark-v1" href="page-category-fish-skates.jsp">홍어</a>
+                      </li>
+                    </ul>
+                    <!-- End Submenu -->
                   </li>
+                  <!-- 생선 -->
                   
                   <!-- 건어물 -->
-                  <li class="nav-item g-mx-10--lg g-mx-15--xl">
-                    <a class="nav-link text-uppercase g-color-primary--hover g-px-5 g-py-20" href="page-category.jsp"><b>건어물</b></a>
+                  <li class="nav-item hs-has-sub-menu g-mx-10--lg g-mx-15--xl">
+                    <a id="nav-link--home" class="nav-link text-uppercase g-color-primary--hover g-px-5 g-py-20" href="page-category.jsp"
+                       aria-haspopup="true"
+                       aria-expanded="false"
+                       aria-controls="nav-submenu--home">
+                      <b>건어물</b>
+                    </a>
+
+                    <!-- Submenu -->
+                    <ul id="nav-submenu--home" class="hs-sub-menu list-unstyled u-shadow-v11 g-min-width-220 g-brd-top g-brd-primary g-brd-top-2 g-mt-7"
+                        aria-labelledby="nav-link--home">
+                      <li class="dropdown-item">
+                        <a class="nav-link g-color-gray-dark-v1" href="page-category.jsp">멸치</a>
+                      </li>
+                    </ul>
+                    <!-- End Submenu -->
                   </li>
+                  <!-- 건어물 -->
                   
-                  <!-- 김/해초류 -->
-                  <li class="nav-item g-mx-10--lg g-mx-15--xl">
-                    <a class="nav-link text-uppercase g-color-primary--hover g-px-5 g-py-20" href="page-category.jsp"><b>김/해초류</b></a>
+                 <!-- 김/해초류 -->
+                  <li class="nav-item hs-has-sub-menu g-mx-10--lg g-mx-15--xl">
+                    <a id="nav-link--home" class="nav-link text-uppercase g-color-primary--hover g-px-5 g-py-20" href="page-category.jsp"
+                       aria-haspopup="true"
+                       aria-expanded="false"
+                       aria-controls="nav-submenu--home">
+                      <b>김/해초류</b>
+                    </a>
+
+                    <!-- Submenu -->
+                    <ul id="nav-submenu--home" class="hs-sub-menu list-unstyled u-shadow-v11 g-min-width-220 g-brd-top g-brd-primary g-brd-top-2 g-mt-7"
+                        aria-labelledby="nav-link--home">
+                      <li class="dropdown-item">
+                        <a class="nav-link g-color-gray-dark-v1" href="page-category.jsp">김</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link g-color-gray-dark-v1" href="page-category.jsp">미역</a>
+                      </li>
+                    </ul>
+                    <!-- End Submenu -->
                   </li>
+                  <!-- 김/해초류 -->
                   
                   <!-- 해산물/어패류 -->
-                  <li class="nav-item g-mx-10--lg g-mx-15--xl">
-                    <a class="nav-link text-uppercase g-color-primary--hover g-px-5 g-py-20" href="page-category.jsp"><b>해산물/어패류</b></a>
+                  <li class="nav-item hs-has-sub-menu g-mx-10--lg g-mx-15--xl">
+                    <a id="nav-link--home" class="nav-link text-uppercase g-color-primary--hover g-px-5 g-py-20" href="page-category.jsp"
+                       aria-haspopup="true"
+                       aria-expanded="false"
+                       aria-controls="nav-submenu--home">
+                      <b>해산물/어패류</b>
+                    </a>
+
+                    <!-- Submenu -->
+                    <ul id="nav-submenu--home" class="hs-sub-menu list-unstyled u-shadow-v11 g-min-width-220 g-brd-top g-brd-primary g-brd-top-2 g-mt-7"
+                        aria-labelledby="nav-link--home">
+                      <li class="dropdown-item">
+                        <a class="nav-link g-color-gray-dark-v1" href="page-category.jsp">전복</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link g-color-gray-dark-v1" href="page-category.jsp">바지락</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link g-color-gray-dark-v1" href="page-category.jsp">꼬막</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link g-color-gray-dark-v1" href="page-category.jsp">새우</a>
+                      </li>
+                    </ul>
+                    <!-- End Submenu -->
                   </li>
-                  
+                  <!-- 해산물/어패류 -->
+                    
                   <!-- 젓갈 -->
                   <li class="nav-item g-mx-10--lg g-mx-15--xl">
                     <a class="nav-link text-uppercase g-color-primary--hover g-px-5 g-py-20" href="page-category.jsp"><b>젓갈</b></a>

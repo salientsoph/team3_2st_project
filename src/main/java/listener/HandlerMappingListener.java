@@ -31,18 +31,14 @@ public class HandlerMappingListener implements ServletContextListener {
     	
     	
          //외부의 ~.properties파일 로딩한다.
-    	System.out.println("경로" + application.getContextPath());
-        System.out.println("rb생성이전");
+    	
     	ResourceBundle rb = ResourceBundle.getBundle(fileName);   //확장자는 생략한다.
-    	System.out.println("Rb불러온 이후");
-    	System.out.println("Rb : " + rb);
+    	
     	try {
     		//key와 value를 분리해서 value를 객체로 만들어서 Map에 넣는다.
 	    	for(String key: rb.keySet()) {
-	    		System.out.println("key: " +  key);
 	    		String value = rb.getString(key);
-	    		//System.out.println(key+ " = " + value);
-	    		System.out.println(value);
+	    		
 	    		//String인 문자열을 객체로 만들어야한다!!!
 	    		//Class<?>는 어떤 객체가 가지고 있는 필드, 생성자, 메소드의 정보를 동적으로 가져올 수 있도록 도와주는 객체이다. - reflection개념
 	    		//reflection 개념은 동저긍로 즉 실행도중 필요한 객체를 적절하게 생성하고 그 객체가 가지고 있는 생성자나 메소드를

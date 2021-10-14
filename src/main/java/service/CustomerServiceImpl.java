@@ -13,7 +13,6 @@ public class CustomerServiceImpl implements CustomerService{
 	public CustomerDTO loginCheck(CustomerDTO customerDTO) throws SQLException, AuthenticationException {
 		CustomerDAO dao = new CustomerDAOImpl();
 		CustomerDTO dto = dao.loginCheck(customerDTO);
-		if(dto == null) throw new AuthenticationException("정보를 다시 확인해주세요.");
 		
     	return dto;
 	}

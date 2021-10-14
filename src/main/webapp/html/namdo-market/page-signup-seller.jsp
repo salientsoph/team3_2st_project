@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <!-- Title -->
-    <title>E-commerce Password Recovery Page | Unify - Responsive Website Template</title>
+    <title>E-commerce Signup Page | Unify - Responsive Website Template</title>
 
     <!-- Required Meta Tags Always Come First -->
     <meta charset="utf-8">
@@ -24,6 +24,8 @@
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="../assets/vendor/icon-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="../assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../assets/vendor/chosen/chosen.css">
     <link rel="stylesheet" href="../assets/vendor/icon-hs/style.css">
     <link rel="stylesheet" href="../assets/vendor/animate.css">
     <link rel="stylesheet" href="../assets/vendor/hamburgers/hamburgers.min.css">
@@ -40,8 +42,7 @@
   <body>
     <main>
       <!-- Header -->
-	  <jsp:include page="common/header.jsp"/>
-
+      <jsp:include page="common/header.jsp"/>
 
       <!-- Breadcrumbs -->
       <section class="g-brd-bottom g-brd-gray-light-v4 g-py-30">
@@ -56,82 +57,101 @@
               <i class="g-color-gray-light-v2 g-ml-5 fa fa-angle-right"></i>
             </li>
             <li class="list-inline-item g-color-primary">
-              <span>ID/Password Recovery</span>
+              <span>Signup</span>
             </li>
           </ul>
         </div>
       </section>
       <!-- End Breadcrumbs -->
 
-      <!-- Login -->
-      <section class="container g-py-100">
+      <!-- Signup -->
+      <section class="container g-pt-100 g-pb-20">
         <div class="row justify-content-center">
-          <div class="col-sm-9 col-md-7 col-lg-5">
-          
+          <div class="col-lg-5 order-lg-2 g-mb-80">
             <div class="g-brd-around g-brd-gray-light-v3 g-bg-white rounded g-px-30 g-py-50 mb-4">
               <header class="text-center mb-4">
-                <h1 class="h4 g-color-black g-font-weight-400">아이디 찾기</h1>
+                <h1 class="h4 g-color-black g-font-weight-400">회원가입</h1>
               </header>
 
               <!-- Form -->
               <form class="g-py-15">
-                <div class="mb-4">
-                  <div class="input-group g-rounded-left-5">
-                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 g-rounded-left-0 g-rounded-right-5 g-py-15 g-px-15" type="email" placeholder="Email Adress">
+                <div class="row">
+                  <div class="col g-mb-20">
+                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" placeholder="이름">
                   </div>
-                  
-                  <br>
-                  
-                  <div class="input-group g-rounded-left-5">
-                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 g-rounded-left-0 g-rounded-right-5 g-py-15 g-px-15" type="email" placeholder="이름">
-                  </div>
-                                    
                 </div>
 
-                <button class="btn btn-block u-btn-primary g-font-size-12 text-uppercase g-py-15 g-px-25" type="button">아이디 찾기</button>
+                
+
+                <div class="row">
+                  <div class="col-sm-6 col-md-12 col-lg-6 g-mb-20">
+                    <select class="js-custom-select u-select-v1 h-100 g-brd-gray-light-v3 g-color-gray-dark-v5 rounded g-py-12" style="width: 100%;"
+                            data-placeholder="Month"
+                            data-open-icon="fa fa-angle-down"
+                            data-close-icon="fa fa-angle-up">
+                      <option></option>
+                      <option value="First Option">1월</option>
+                      <option value="Second Option">2월</option>
+                      <option value="Third Option">3월</option>
+                      <option value="Fourth Option">4월</option>
+                      <option value="Fifth Option">5월</option>
+                      <option value="Sixth Option">6월</option>
+                      <option value="Seventh Option">7월</option>
+                      <option value="Eighth Option">8월</option>
+                      <option value="Ninth Option">9월</option>
+                      <option value="Tenth Option">10월</option>
+                      <option value="Eleventh Option">11월</option>
+                      <option value="Twelfth Option">12월</option>
+                    </select>
+                  </div>
+
+                  <div class="col g-mb-20">
+                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" placeholder="Day">
+                  </div>
+
+                  <div class="col g-mb-20">
+                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" placeholder="Year">
+                  </div>
+                </div>
+
+                <div class="g-mb-20">
+                  <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" placeholder="아이디">
+                </div>
+
+                <div class="g-mb-20">
+                  <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" placeholder="이메일">
+                </div>
+
+                <div class="g-mb-20">
+                  <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" placeholder="비밀번호">
+                </div>
+
+                <div class="g-mb-20">
+                  <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" placeholder="비밀번호확인">
+                </div>
+                
+                <div class="g-mb-20">
+                  <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 rounded g-py-15 g-px-15" type="text" placeholder="사업자등록번호">
+                </div>
+
+                <button class="btn btn-block u-btn-primary g-font-size-12 text-uppercase g-py-12 g-px-25" type="button">회원 등록</button>
               </form>
               <!-- End Form -->
             </div>
-            
 
-          </div>
-          
-          <div class="col-sm-9 col-md-7 col-lg-5">
-          
-            <div class="g-brd-around g-brd-gray-light-v3 g-bg-white rounded g-px-30 g-py-50 mb-4">
-              <header class="text-center mb-4">
-                <h1 class="h4 g-color-black g-font-weight-400">비밀번호 찾기</h1>
-              </header>
-
-              <!-- Form -->
-              <form class="g-py-15">
-                <div class="mb-4">
-                  <div class="input-group g-rounded-left-5">
-                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 g-rounded-left-0 g-rounded-right-5 g-py-15 g-px-15" type="email" placeholder="Email Adress">
-                  </div>
-                  
-                  <br>
-                  
-                  <div class="input-group g-rounded-left-5">
-                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 g-rounded-left-0 g-rounded-right-5 g-py-15 g-px-15" type="email" placeholder="ID">
-                  </div>
-                                    
-                </div>
-
-                <button class="btn btn-block u-btn-primary g-font-size-12 text-uppercase g-py-15 g-px-25" type="button">비밀번호 찾기</button>
-              </form>
-              
-              <!-- End Form -->
+            <div class="text-center">
+              <p class="g-color-gray-dark-v5 mb-0">이미 등록된 계정이 존재하신가요?
+                <a class="g-font-weight-600" href="page-login-seller.jsp">로그인</a></p>
             </div>
-            
-
           </div>
+
+
         </div>
       </section>
-      <!-- End Login -->
+      <!-- End Signup -->
 
-      <!-- Footer -->
-      <jsp:include page="common/footer.jsp"/>
+	  <!-- Footer -->
+	  <jsp:include page="common/footer.jsp"/>
 
       <a class="js-go-to u-go-to-v2" href="#"
          data-type="fixed"
