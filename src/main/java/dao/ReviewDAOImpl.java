@@ -15,7 +15,7 @@ public class ReviewDAOImpl implements ReviewDAO {
 	private Properties proFile = DbUtil.getProFile();
 
 	@Override
-	public int createReview(int itemNo, int customerNo, String content) throws SQLException {
+	public int createReview(int itemNo, int customerNo, int reviewGrade, String content) throws SQLException {
 		Connection con = null;
 		PreparedStatement ps = null;
 		int result = 0;
@@ -25,7 +25,8 @@ public class ReviewDAOImpl implements ReviewDAO {
 			ps = con.prepareStatement(sql);
 			ps.setInt(1, itemNo);
 			ps.setInt(2, customerNo);
-			ps.setString(3, content);
+			ps.setInt(3, reviewGrade);
+			ps.setString(4, content);
 			result = ps.executeUpdate();
 		}
 		catch(SQLException e) {
@@ -57,8 +58,20 @@ public class ReviewDAOImpl implements ReviewDAO {
 
 	@Override
 	public int updateReview(String content, int reviewNo) throws SQLException {
-		// TODO Auto-generated method stub
-		return 0;
+		Connection con = null;
+		PreparedStatement ps =null;
+		int result = 0;
+		String sql = proFile.getProperty("review.updateReview");
+		try {
+			con = DbUtil.getConnection();
+			ps = con.prepareStatement(sql);
+			ps.setString(1, content);
+			ps.setInt(2, reviewNo);
+			result = ps.executeUpdate();
+		}finally {
+			DbUtil.dbClose(ps, con);
+		}
+		return result;
 	}
 
 	@Override
