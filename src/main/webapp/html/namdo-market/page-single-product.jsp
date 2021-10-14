@@ -261,7 +261,7 @@
                 <div class="tab-pane fade g-pt-30" id="nav-1-1-default-hor-left--1" role="tabpanel">
                   <!-- <h4 class="g-font-size-15 mb-3">General Clothing Size Guide</h4> -->
 
-                  <!-- Size -->
+                  <!-- 배송정보 -->
                   <table>
                     <tbody>
                       <tr class="g-color-gray-dark-v4 g-font-size-12">
@@ -294,7 +294,7 @@
                       </tr>
                     </tbody>
                   </table>
-                  <!-- End Size -->
+                  <!-- 배송정보 -->
                 </div>
 
                 <div class="tab-pane fade g-pt-30" id="nav-1-1-default-hor-left--2" role="tabpanel">

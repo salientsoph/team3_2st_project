@@ -50,12 +50,11 @@
         <div class="container">
           <ul class="u-list-inline">
             <li class="list-inline-item g-mr-5">
-              <a class="u-link-v5 g-color-text" href="#">요거 묵어봤는감?</a>
+              <a class="u-link-v5 g-color-text" href="home-page.jsp">요거 묵어봤는감?</a>
               <i class="g-color-gray-light-v2 g-ml-5 fa fa-angle-right"></i>
             </li>
             <li class="list-inline-item g-mr-5">
-              <a class="u-link-v5 g-color-text" href="#">생선</a>
-              <i class="g-color-gray-light-v2 g-ml-5 fa fa-angle-right"></i>
+              <a class="u-link-v5 g-color-text" href="page-category-fish.jsp">생선</a>
             </li>
           </ul>
         </div>
@@ -73,74 +72,32 @@
             <div>
               
               <label class="form-check-inline u-check u-link-v5 g-color-gray-dark-v4 g-color-primary--hover g-pl-25 mb-0 mr-2">
-                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked>
+                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="radio" name="fish-check" onclick="fishCheck(1)" checked>
                 <span class="d-block u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
                   <i class="fa" data-check-icon="&#xf00c"></i>
                 </span>
                 전체
               </label>
               <label class="form-check-inline u-check u-link-v5 g-color-gray-dark-v4 g-color-primary--hover g-pl-25 mb-0 mx-2">
-                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="radio" name="fish-check" onclick="fishCheck(2)">
                 <span class="d-block u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
                   <i class="fa" data-check-icon="&#xf00c"></i>
                 </span>
-                고흥
+                굴비
               </label>
               <label class="form-check-inline u-check u-link-v5 g-color-gray-dark-v4 g-color-primary--hover g-pl-25 mb-0 mx-2">
-                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="radio" name="fish-check" onclick="fishCheck(3)">
                 <span class="d-block u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
                   <i class="fa" data-check-icon="&#xf00c"></i>
                 </span>
-                목포
+                세발낙지
               </label>
               <label class="form-check-inline u-check u-link-v5 g-color-gray-dark-v4 g-color-primary--hover g-pl-25 mb-0 mx-2">
-                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="radio" name="fish-check" onclick="fishCheck(4)">
                 <span class="d-block u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
                   <i class="fa" data-check-icon="&#xf00c"></i>
                 </span>
-                무안
-              </label>
-              <label class="form-check-inline u-check u-link-v5 g-color-gray-dark-v4 g-color-primary--hover g-pl-25 mb-0 mx-2">
-                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
-                <span class="d-block u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
-                  <i class="fa" data-check-icon="&#xf00c"></i>
-                </span>
-                보성
-              </label>
-              <label class="form-check-inline u-check u-link-v5 g-color-gray-dark-v4 g-color-primary--hover g-pl-25 mb-0 mx-2">
-                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
-                <span class="d-block u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
-                  <i class="fa" data-check-icon="&#xf00c"></i>
-                </span>
-                신안
-              </label>
-              <label class="form-check-inline u-check u-link-v5 g-color-gray-dark-v4 g-color-primary--hover g-pl-25 mb-0 mx-2">
-                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
-                <span class="d-block u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
-                  <i class="fa" data-check-icon="&#xf00c"></i>
-                </span>
-                여수
-              </label>
-              <label class="form-check-inline u-check u-link-v5 g-color-gray-dark-v4 g-color-primary--hover g-pl-25 mb-0 mx-2">
-                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
-                <span class="d-block u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
-                  <i class="fa" data-check-icon="&#xf00c"></i>
-                </span>
-                영광
-              </label>
-              <label class="form-check-inline u-check u-link-v5 g-color-gray-dark-v4 g-color-primary--hover g-pl-25 mb-0 mx-2">
-                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
-                <span class="d-block u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
-                  <i class="fa" data-check-icon="&#xf00c"></i>
-                </span>
-                완도
-              </label>
-              <label class="form-check-inline u-check u-link-v5 g-color-gray-dark-v4 g-color-primary--hover g-pl-25 mb-0 mx-2">
-                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
-                <span class="d-block u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
-                  <i class="fa" data-check-icon="&#xf00c"></i>
-                </span>
-                해남
+                홍어
               </label>
             </div>
     	
@@ -191,10 +148,8 @@
             <!-- Product -->
             <figure class="g-pos-rel g-mb-20">
               <img class="img-fluid" src="assets/img-temp/480x700/main_480_700.png" alt="Image Description">
+              <span class="u-ribbon-v1 g-width-40 g-height-40 g-color-white g-bg-primary g-font-size-13 text-center text-uppercase g-rounded-50x g-top-20 g-right-minus-10 g-px-2 g-py-10">New</span>
 
-              <figcaption class="w-100 g-bg-primary g-bg-black--hover text-center g-pos-abs g-bottom-0 g-transition-0_2 g-py-5">
-                <a class="g-color-white g-font-size-11 text-uppercase g-letter-spacing-1 g-text-underline--none--hover" href="#">New Arrival</a>
-              </figcaption>
             </figure>
 
             <div class="media">
@@ -239,7 +194,7 @@
             <figure class="g-pos-rel g-mb-20">
               <img class="img-fluid" src="assets/img-temp/480x700/main_480_700_2.png" alt="Image Description">
 
-              <span class="u-ribbon-v1 g-width-40 g-height-40 g-color-white g-bg-primary g-font-size-13 text-center text-uppercase g-rounded-50x g-top-10 g-right-minus-10 g-px-2 g-py-10">-40%</span>
+              <span class="u-ribbon-v1 g-width-40 g-height-40 g-color-white g-bg-primary g-font-size-13 text-center text-uppercase g-rounded-50x g-top-20 g-right-minus-10 g-px-2 g-py-10">New</span>
             </figure>
 
             <div class="media">
@@ -284,9 +239,6 @@
             <figure class="g-pos-rel g-mb-20">
               <img class="img-fluid" src="assets/img-temp/480x700/main_480_700_3.png" alt="Image Description">
 
-              <figcaption class="w-100 g-bg-lightred text-center g-pos-abs g-bottom-0 g-transition-0_2 g-py-5">
-                <span class="g-color-white g-font-size-11 text-uppercase g-letter-spacing-1">Sold Out</a>
-              </figcaption>
             </figure>
 
             <div class="media">
@@ -374,9 +326,6 @@
             <figure class="g-pos-rel g-mb-20">
               <img class="img-fluid" src="assets/img-temp/480x700/main_480_700_5.png" alt="Image Description">
 
-              <figcaption class="w-100 g-bg-lightred text-center g-pos-abs g-bottom-0 g-transition-0_2 g-py-5">
-                <span class="g-color-white g-font-size-11 text-uppercase g-letter-spacing-1">Sold Out</a>
-              </figcaption>
             </figure>
 
             <div class="media">
@@ -464,11 +413,8 @@
             <figure class="g-pos-rel g-mb-20">
               <img class="img-fluid" src="assets/img-temp/480x700/main_480_700_7.png" alt="Image Description">
 
-              <span class="u-ribbon-v1 g-width-40 g-height-40 g-color-white g-bg-primary g-font-size-13 text-center text-uppercase g-rounded-50x g-top-10 g-right-minus-10 g-px-2 g-py-10">-40%</span>
+              <span class="u-ribbon-v1 g-width-40 g-height-40 g-color-white g-bg-primary g-font-size-13 text-center text-uppercase g-rounded-50x g-top-20 g-right-minus-10 g-px-2 g-py-10">New</span>
 
-              <figcaption class="w-100 g-bg-primary g-bg-black--hover text-center g-pos-abs g-bottom-0 g-transition-0_2 g-py-5">
-                <a class="g-color-white g-font-size-11 text-uppercase g-letter-spacing-1 g-text-underline--none--hover" href="#">New Arrival</a>
-              </figcaption>
             </figure>
 
             <div class="media">
@@ -672,6 +618,22 @@
         // initialization of range slider
         $.HSCore.components.HSSlider.init('#rangeSlider1');
       });
+    </script>
+    
+    <script type="text/javascript">
+      function fishCheck(n){
+
+    	  if(n==1){
+    		  location.href = "page-category-fish.jsp"
+    	  }else if(n==2){
+    		  location.href = "page-category-fish-gulbi.jsp"
+    	  }else if(n==3){
+    		  location.href = "page-category-fish-octopus.jsp"
+    	  }else {
+    		  location.href = "page-category-fish-skates.jsp"
+    	  }
+
+      }
     </script>
   </body>
 </html>
