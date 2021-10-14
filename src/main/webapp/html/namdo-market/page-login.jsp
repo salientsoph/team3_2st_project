@@ -70,7 +70,9 @@
               </header>
 
               <!-- Form -->
-              <form method="post" action="login" class="g-py-15">
+              <form method="post" action="${pageContext.request.contextPath}/front" class="g-py-15">
+              	<input type="hidden" name="key" value = "customer" /> <!-- Controller를 찾는 정보 -->
+				<input type="hidden" name="methodName" value = "login" />  <!-- 메소드이름 -->
                 <div class="mb-4">
                   <div class="input-group g-rounded-left-3">
                     <span class="input-group-prepend g-width-45">
@@ -78,7 +80,7 @@
                         <i class="icon-finance-067 u-line-icon-pro"></i>
                       </span>
                     </span>
-                    <input name="userEmail" class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 g-rounded-left-0 g-rounded-right-3 g-py-15 g-px-15" type="email" placeholder="이메일">
+                    <input name="userId" class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 g-rounded-left-0 g-rounded-right-3 g-py-15 g-px-15" type="text" placeholder="아이디">
                   </div>
                 </div>
 
