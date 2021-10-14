@@ -57,7 +57,7 @@
               <div class="col-6 col-sm-auto order-sm-3 g-py-5 g-pr-0 g-py-20--sm">
                 <!-- Login -->
                 <div class="d-inline-block">
-                  <a class="u-icon-v1 g-color-text g-color-black--hover g-color-black--focus g-font-size-16 g-text-underline--none--hover" href="page-login.jsp">
+                  <a class="u-icon-v1 g-color-text g-color-black--hover g-color-black--focus g-font-size-16 g-text-underline--none--hover" href="page-login-customer.jsp">
                     <i class="icon-finance-067 u-line-icon-pro"></i>
                   </a>
                 </div>

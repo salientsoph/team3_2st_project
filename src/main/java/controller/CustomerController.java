@@ -24,8 +24,8 @@ public class CustomerController implements Controller{
 	}
 	
 	public ModelAndView login(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		String customerId = request.getParameter("userId");
-		String pwd = request.getParameter("userPwd");
+		String customerId = request.getParameter("customerId");
+		String pwd = request.getParameter("customerPwd");
 		
 		CustomerDTO customerDTO = customerService.loginCheck(new CustomerDTO(customerId, pwd));
 		
