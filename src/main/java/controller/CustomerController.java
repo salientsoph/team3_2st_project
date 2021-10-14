@@ -25,7 +25,7 @@ public class CustomerController implements Controller{
 	
 	public ModelAndView login(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		String customerId = request.getParameter("userId");
-		String pwd = request.getParameter("pwd");
+		String pwd = request.getParameter("userPwd");
 		
 		CustomerDTO customerDTO = customerService.loginCheck(new CustomerDTO(customerId, pwd));
 		
@@ -34,7 +34,7 @@ public class CustomerController implements Controller{
 		session.setAttribute("customerDTO", customerDTO);
 		
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("home-page-3.jsp");
+		mv.setViewName("home-page.jsp");
 		
 		//뽀워드는 리퀘스트만 유지된다.(세션은 redirect여도 유지)
 		mv.setRedirect(true);
@@ -47,7 +47,7 @@ public class CustomerController implements Controller{
 		HttpSession session = request.getSession();
 		session.invalidate();
 		
-		return new ModelAndView("home-page-3.jsp", true);
+		return new ModelAndView("home-page.jsp", true);
 	}
 
 

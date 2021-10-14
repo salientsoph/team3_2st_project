@@ -37,9 +37,8 @@ public class DispatcherServlet extends HttpServlet {
 		String key = request.getParameter("key");
 		String methodName = request.getParameter("methodName");
 		try {
-			if(key==null || key.equals("")) key="elec";
-			if(methodName==null || methodName.equals("")) methodName = "select";
-			
+			System.out.println(map);
+			System.out.println(clzMap);
 			Class<?> clz = clzMap.get(key); //reflection개념을 적용하기 위한 객체를 구한다.
 			
 			//String을 하나의 메소드의 개념으로 만드는 과정
@@ -51,14 +50,12 @@ public class DispatcherServlet extends HttpServlet {
 			ModelAndView mv = (ModelAndView)method.invoke(controller, request, response); //메소드호출
 			
 			if(mv.isRedirect()) { //redirect방식이다.
-				response.sendRedirect(mv.getViewName());
+				response.sendRedirect("html/namdo-market/"+mv.getViewName());
 			}else {
-				request.getRequestDispatcher(mv.getViewName()).forward(request, response);
+				request.getRequestDispatcher("html/namdo-market/"+mv.getViewName()).forward(request, response);
 			}
 		}catch(Exception e) {
 			e.printStackTrace();
-			request.setAttribute("errorMsg", e.getCause().getMessage());
-			request.getRequestDispatcher("error/error.jsp").forward(request, response);
 		}
 	}//service끝
 
